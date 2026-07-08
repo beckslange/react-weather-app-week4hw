@@ -18,5 +18,16 @@ export default function App() {
       "Friday",
       "Saturday",
     ];
+
+    let day = days[date.getDay()];
+    let hours = date.getHours();
+    let minutes = date.getMinutes();
+
+    if (minutes < 10) {
+      minutes = `0${minutes}`;
+    }
+    let ampm = hours >= 12 ? "PM" : "AM";
+    hours = hours % 12;
+    hours = hours ? hours : 12;
   }
 }
