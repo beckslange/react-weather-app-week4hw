@@ -29,5 +29,18 @@ export default function App() {
     let ampm = hours >= 12 ? "PM" : "AM";
     hours = hours % 12;
     hours = hours ? hours : 12;
+
+    return `${day} ${hours}:${minutes} ${ampm}`;
+  }
+
+  function refreshWeather(response) {
+    setWeatherData({
+      city: response.data.city,
+      time: formatDate(response.data.time),
+      description: response.data.temperature.humidity,
+      wind: Math.round(response.data.wind.speed),
+      temperature: Math.round(response.data.temperature.current),
+      iconURL: response.data.condition.icon_URL,
+    });
   }
 }
