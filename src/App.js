@@ -26,7 +26,7 @@ export default function App() {
         </a>
         , and hosted on{" "}
         <a
-          href="https://app.netlify.com/projects/weeksevenweatherapphomework/overview"
+          href="https://app.netlify.com/projects/react-week4-hw/overview"
           target="_blank"
           rel="noreferrer"
         >
