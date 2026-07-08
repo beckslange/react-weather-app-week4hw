@@ -18,7 +18,7 @@ export default function App() {
         </a>
         , open sourced on{" "}
         <a
-          href="https://github.com/beckslange/vanilla-weather-search-homework"
+          href="https://github.com/beckslange/react-weather-app-week4hw"
           target="_blank"
           rel="noreferrer"
         >
