@@ -7,7 +7,6 @@ export default function App() {
   return (
     <div className="classname">
       <h1>Week 4 React HW</h1>
-      <h2>does this work</h2>
     </div>
   );
 }
